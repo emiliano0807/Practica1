@@ -18,7 +18,11 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
+            HolaMundo("HolaMundo")
         }
     }
     @Composable
+    fun HolaMundo(mensaje:String){
+        Text(text = "$mensaje")
+    }
 }
